@@ -1,24 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
-
+import ToDo from "./ToDo.js"
 function App() {
+  const todo = {
+    userId: 1,
+    id: 1,
+    title: "title",
+    completed: false,
+  };
+  
+  
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <ToDo id={todo.id} checked={todo.completed} title={todo.title} userId={todo.userId}/>
+    </>
   );
 }
 
