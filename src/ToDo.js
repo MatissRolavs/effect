@@ -1,6 +1,6 @@
 import {useState} from "react";
 function ToDo(props){
-    const [checkBox, setCheckBox] = useState(props.checked);
+    const [checkBox, setCheckBox] = useState(props.completed);
     function handleCheckBox(event){
         setCheckBox(event.target.checked);
     }

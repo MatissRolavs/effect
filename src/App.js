@@ -3,7 +3,7 @@ function App() {
   const todo = {
     userId: 1,
     id: 1,
-    title: "title",
+    title: "delectus aut autem",
     completed: false,
   };
   
@@ -11,7 +11,7 @@ function App() {
 
   return (
     <>
-      <ToDo id={todo.id} checked={todo.completed} title={todo.title} userId={todo.userId}/>
+      <ToDo {...todo}/>
     </>
   );
 }
