@@ -7,8 +7,10 @@ function ToDo(props){
         return(
             <>  
                 <p>User ID:{props.userId}</p>
-                <input type="checkbox" id={props.id} checked={checkBox} onChange={handleCheckBox}></input>
+                <p>ID:{props.id} </p>
+                <input type="checkbox" checked={checkBox} onChange={handleCheckBox}></input>
                 <p>{props.title}</p>
+                
             </>
         )
     }
