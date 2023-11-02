@@ -1,4 +1,5 @@
 import ToDo from "./ToDo.js"
+import Comment from "./Comment.js"
 import {useEffect, useState} from "react";
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
   return (
     <>
       {isLoading ? 'Loading...' : <ToDo {...todo}/>}
+      <Comment/>
     </>
   );
 }
