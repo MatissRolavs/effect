@@ -1,4 +1,5 @@
 import {useEffect, useState} from "react";
+import UserName from "./UserName.js";
 function PostList(){
     const [isLoading, setIsLoading] = useState(true); // Add a loading state
     const [postList, setPostList] = useState([]);
@@ -16,10 +17,11 @@ function PostList(){
     const postsJSX = postList.map((post,index) =>{
         return (
                 <>
-                <p>user ID: {post.userId}</p>
+                <UserName userNameId={post.userId}/>
                 <p>ID: {post.id}</p>
                 <p>title: {post.title}</p>
                 <p>body: {post.body}</p>
+                <p>-------------------------------</p>
                 </>    
         )
     })
