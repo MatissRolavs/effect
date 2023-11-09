@@ -1,5 +1,6 @@
 import {useEffect, useState} from "react";
 import UserName from "./UserName.js";
+import PostComment from "./PostComment.js";
 function PostList(){
     const [isLoading, setIsLoading] = useState(true); // Add a loading state
     const [postList, setPostList] = useState([]);
@@ -21,7 +22,8 @@ function PostList(){
                 <p>ID: {post.id}</p>
                 <p>title: {post.title}</p>
                 <p>body: {post.body}</p>
-                <p>-------------------------------</p>
+                <p>comments: <PostComment postID={post.userId}/> </p>
+                <p>-------------------------------------------------</p>
                 </>    
         )
     })

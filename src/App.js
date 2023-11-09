@@ -1,5 +1,5 @@
-import ToDo from "./ToDo.js"
-import Comment from "./Comment.js"
+// import ToDo from "./ToDo.js"
+// import Comment from "./Comment.js"
 import {useEffect, useState} from "react";
 // import Post from "./Post.js";
 import PostList from "./PostList.js";
@@ -22,10 +22,10 @@ function App() {
   // Only render ToDo once data is fetched
   return (
     <>
-      {isLoading ? 'Loading...' : <ToDo {...todo}/>}
+      {/* {isLoading ? 'Loading...' : <ToDo {...todo}/>}
       <p>-------------------------------------------------</p>
       <Comment/>
-      <p>-------------------------------------------------</p>
+      <p>-------------------------------------------------</p> */}
       {/* <Post/> */}
       <PostList/>
     </>
